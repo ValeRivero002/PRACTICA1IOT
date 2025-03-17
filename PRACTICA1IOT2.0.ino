@@ -5,8 +5,6 @@
 // Pines del ESP32
 #define TRIG_PIN 15
 #define ECHO_PIN 4
-#define INTERVALO_CAMBIO 10000 
-
 
 #define LED_ROJO 23
 #define LED_AMARILLO 22
@@ -24,15 +22,11 @@ Led RedLed(LED_ROJO);
 Led YellowLed(LED_AMARILLO);
 Led GreenLed(LED_VERDE);
 
-
-unsigned long previousMillis = 0;
-
 void setup() {
     Serial.begin(115200);
 }
 
 void loop() {
-    unsigned long currentMillis = millis();
     
     float distance = sensor.getDistance();
 
