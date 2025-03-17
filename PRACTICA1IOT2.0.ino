@@ -6,9 +6,9 @@
 #define TRIG_PIN 15
 #define ECHO_PIN 4
 
-#define LED_ROJO 23
-#define LED_AMARILLO 22
-#define LED_VERDE 21
+#define RED_LED_PIN 23
+#define YELLOW_LED_PIN 22
+#define GREEN_LED_PIN 21
 #define DISTANCE_RED_LED 10
 #define DISTANCE_YELLOW_LED 20
 #define DISTANCE_GREEN_LED 35
@@ -18,9 +18,9 @@
 DistanceSensor sensor(TRIG_PIN, ECHO_PIN);
 
 
-Led RedLed(LED_ROJO);
-Led YellowLed(LED_AMARILLO);
-Led GreenLed(LED_VERDE);
+Led RedLed(RED_LED_PIN);
+Led YellowLed(YELLOW_LED_PIN);
+Led GreenLed(GREEN_LED_PIN);
 
 void setup() {
     Serial.begin(115200);
